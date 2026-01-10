@@ -5,7 +5,8 @@
 
 • Any unauthorized use may result in takedown actions (DMCA).
 
-[ No License ]
+# License
+### [ No License ]
 • Version 0.0.1, Thailand 2026
 
 Copyright (c) 2026 John-loercol
