@@ -1,0 +1,44 @@
+-- local Services...
+local CoreGui = game:GetService("CoreGui")
+
+local UserInputService = game:GetService("UserInputService")
+
+local UIS = game:GetService("UserInputService")
+
+local uis = game:GetService("UserInputService")
+
+local TweenService = game:GetService("TweenService")
+
+local Players = game:GetService("Players")
+
+local players = game:GetService("Players")
+
+local RunService = game:GetService("RunService")
+
+local runService = game:GetService("RunService")
+
+local Lighting = game:GetService("Lighting")
+
+local Workspace = game:GetService("Workspace")
+
+local LocalPlayer = Players.LocalPlayer
+
+local VirtualInputManager = game:GetService("VirtualInputManager")
+
+local HttpService = game:GetService("HttpService")
+
+local SoundService = game:GetService("SoundService")
+
+local MarketplaceService = game:GetService("MarketplaceService")
+
+local TeleportService = game:GetService("TeleportService")
+
+local HttpService = game:GetService("HttpService")
+
+local PlaceId = game.PlaceId
+local JobId = game.JobId
+local LocalPlayer = Players.LocalPlayer
+local Player = game.Players.LocalPlayer
+local player = game.Players.LocalPlayer
+local Camera = workspace.CurrentCamera
+local camera = workspace.CurrentCamera
