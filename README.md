@@ -1,4 +1,4 @@
-# Dex-Explorer-API
+# rbx.Assets.erc
 - Proprietary License Notice
 ```
 This project is **proprietary software**.  
@@ -11,7 +11,7 @@ Please refer to the **LICENSE** file for full legal terms.
 ⚠ Any unauthorized use may result in takedown actions (DMCA).
 ```
 
-# Dex-Explorer-API
+# rbx.Assets.erc
 - Version 0.0.1 — Thailand, 2026
 - Copyright (c) 2026 John-loercol
 All Rights Reserved.
