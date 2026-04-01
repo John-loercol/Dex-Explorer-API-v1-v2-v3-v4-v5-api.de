@@ -1,6 +1,4 @@
-local library = "https://raw.githubusercontent.com/John-loercol/rbx.Assets.erc/e9830d6e94bf20908cd04f005680ab762fe19633/ERC%20GUI%20-%20library%20UI%20-%20New.lua"
-
-local erclib = loadstring(game:HttpGet(library))()
+local erclib = loadstring(game:HttpGet("https://raw.githubusercontent.com/John-loercol/rbx.Assets.erc/refs/heads/API.Services.get/ERC%20GUI%20-%20library%20UI%20-%20New.lua"))();
 
 local window = erclib:window({
 TitleText = "Test - library ui",
