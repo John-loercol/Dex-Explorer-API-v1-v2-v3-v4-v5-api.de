@@ -3,24 +3,20 @@ local erclib = loadstring(game:HttpGet("https://raw.githubusercontent.com/John-l
 local window = erclib:window({
 TitleText = "Test - library ui",
 SubTitle = "by erc.t.tm.th",
-ImageIcon = "rbxassetid://105145135555552",
 IconText = "Test GUI"
 })
 
 local TestTab1 = window:CreateTab({Name = "Test-1"})
 
 local a1 = TestTab1:createToggleDescription({
-Parent = TestTab1,
 Name = "Description"
 })
 
 local b1 = TestTab1:createToggleSection({
-Parent = TestTab1,
 Name = "Section"
 })
 
 local c1 = TestTab1:createToggle({
-Parent = TestTab1,
 Name = "createToggle",
 Description = "off / on",
 
@@ -31,7 +27,6 @@ end
 })
 
 local d1 = TestTab1:createToggleText({
-Parent = TestTab1,
 Name = "Text",
 Description = "Enter Text",
 Text = "",
@@ -39,14 +34,12 @@ PlaceholderText = "..."
 })
 
 local e1 = TestTab1:createToggleTextLabel({
-Parent = TestTab1,
 Name = "TextLabel",
 Description = "Test",
 Text = "..."
 })
 
 local f1 = TestTab1:createToggleButton({
-Parent = TestTab1,
 Name = "Button",
 Description = "Test",
 Text = "Button",
@@ -58,7 +51,6 @@ end
 })
 
 local g1 = TestTab1:createToggleSlider({
-Parent = TestTab1,
 Name = "Slider - decimal",
 mode = "decimal",
 default = 50,
@@ -72,7 +64,6 @@ callback = function (value)
 })
 
 local h1 = TestTab1:createToggleSlider({
-Parent = TestTab1,
 Name = "Slider - int",
 mode = "int",
 default = 50,
@@ -86,7 +77,6 @@ callback = function (value)
 })
 
 local i1 = TestTab1:createToggleDropdown({
-Parent = TestTab1,
 Name = "Dropdown - Single",
 mode = "Single",
 Description = "Test",
@@ -100,7 +90,6 @@ i1:AddList({
 })
 
 local j1 = TestTab1:createToggleDropdown({
-Parent = TestTab1,
 Name = "Dropdown - Multi",
 mode = "Multi",
 Description = "Test",
@@ -114,7 +103,6 @@ j1:AddList({
 })
 
 local k1 = TestTab1:createToggleColorPicker({
-Parent = TestTab1,
 Name = "ColorPicker",
 Description = "Test",
 defaultColor = Color3.fromRGB(0,150,255)
