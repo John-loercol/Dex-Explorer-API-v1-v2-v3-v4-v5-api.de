@@ -2806,7 +2806,7 @@ function ContainerContent:createToggleColorPicker(config)
     -- status light
     local statusLight = Instance.new("Frame")
     statusLight.Size = UDim2.new(0.45, -50, 0.8, 0)
-    statusLight.Position = UDim2.new(0.55, 15, 0.1, 0)
+    statusLight.Position = UDim2.new(0.55, 45, 0.1, 0)
     statusLight.BackgroundColor3 = defaultColor
     statusLight.BackgroundTransparency = 0
     statusLight.BorderSizePixel = 0
