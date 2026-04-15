@@ -9,7 +9,7 @@ repeat task.wait() until game:IsLoaded()
 repeat task.wait() until game:FindFirstChild("CoreGui") and pcall(function() return game.CoreGui end)
 
 --// library api
-local erclib = {} -data
+local erclib = {} -- data
 
 --// Services
 local CoreGui = game:GetService("CoreGui")
