@@ -1,9 +1,12 @@
-local erclib = loadstring(game:HttpGet("https://raw.githubusercontent.com/John-loercol/rbx.Assets.erc/refs/heads/API.Services.get/ERC%20GUI%20-%20library%20UI%20-%20New.lua"))();
+local erclib = loadstring(game:HttpGet("https://raw.githubusercontent.com/John-loercol/rbx.Assets.erc/refs/heads/API.Services.get/ERC%20GUI%20-%20library%20UI%20-%20New(1).lua"))();
 
 local window = erclib:window({
 TitleText = "Test - library ui",
 SubTitle = "by erc.t.tm.th",
-IconText = "Test GUI"
+ImageIcon = "rbxassetid://138560507380517",
+Size = UDim2.new(0,545,0,300),
+IconText = "Test GUI",
+FontText = Enum.Font.SourceSansBold
 })
 
 local TestTab1 = window:CreateTab({Name = "Test-1"})
@@ -16,12 +19,14 @@ local b1 = TestTab1:createToggleSection({
 Name = "Section"
 })
 
+local databutton = false
+
 local c1 = TestTab1:createToggle({
 Name = "createToggle",
 Description = "off / on",
 
 callback = function(value)
-    print("Value changed to:", value) -- ตรวจสอบค่าที่เปลี่ยนแปลง
+databutton = value
 end
 
 })
@@ -40,15 +45,22 @@ Text = "..."
 })
 
 local f1 = TestTab1:createToggleButton({
-Name = "Button",
+Name = "Button - Notification",
 Description = "Test",
 Text = "Button",
 
 callback = function()
-
+erclib:Notification({
+TitleText = "Notification Test",
+MessageText = "Text.123",
+DelayTime = 5
+})
 end
 
 })
+
+local sliderValuedecimal = 0
+local sliderValueint = 0
 
 local g1 = TestTab1:createToggleSlider({
 Name = "Slider - decimal",
@@ -57,9 +69,9 @@ default = 50,
 minValue = 0,
 maxValue = 100,
 
-callback = function (value) 
-       print("Decimal slider updated:", value)
-    end
+callback = function (value)
+sliderValuedecimal = value
+end
 
 })
 
@@ -70,9 +82,22 @@ default = 50,
 minValue = 0,
 maxValue = 100,
 
-callback = function (value) 
-       print("Decimal slider updated:", value)
-    end
+callback = function (value)
+sliderValueint = value
+end
+
+})
+
+local f2 = TestTab1:createToggleButton({
+Name = "Button - value",
+Description = "Test",
+Text = "Button",
+
+callback = function()
+print("Decimal slider updated:", sliderValuedecimal)
+print("int slider updated:", sliderValueint)
+print("Value changed to:", databutton)
+end
 
 })
 
